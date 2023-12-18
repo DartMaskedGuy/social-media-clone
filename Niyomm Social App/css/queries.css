@@ -1,0 +1,37 @@
+@media screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+        padding: 1rem 0;
+        gap: 1rem;
+        background: red;
+    }
+    .left-side{
+        width: 5%;
+    }
+    .right-side{
+        width: 30vw;
+    }
+    .main-content{
+        width: 70%;
+    }
+    .profile{display: none;}
+    .sidebar h3{display: none;}
+    .left-side .create-post-btn{display: none;}
+}
+@media screen and (max-width: 992px){
+    .search-box{
+        display: none;
+    }
+    .left-side{
+        width: fit-content;
+    }
+    .sidebar a i{
+        padding: 0 1.2rem;
+    }
+    .sidebar a i .notification-count{
+        left: 1.5rem;
+    }
+    .right-side{
+        width: fit-content;
+    }
+}

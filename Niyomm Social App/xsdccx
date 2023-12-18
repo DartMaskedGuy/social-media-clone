@@ -1,0 +1,61 @@
+
+            <!-- ======= Product (Image Slider) Section ======= -->
+            <section class="product"> 
+                <h2 class="product-category">Top Categories</h2>
+                <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+                <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+                <div class="product-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">50% off</span>
+                            <img src="images/friend-1.jpg" class="product-thumb" alt="">
+                            <button class="card-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">50% off</span>
+                            <img src="assets/images/card2.jpg" class="product-thumb" alt="">
+                            <button class="card-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">50% off</span>
+                            <img src="images/friend-2.jpg" class="product-thumb" alt="">
+                            <button class="card-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Product (Image Slider) Section -->
+
+
+
+
+
+
+
+
+
+
+
+             /**
+ * Product Slider
+ */
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})

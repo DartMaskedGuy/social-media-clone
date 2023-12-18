@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Niyomm</title>
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+</head>
+<body>
+    <!-- ========================= Header ========================= -->
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <h1 class="logo">Niyomm</h1>
+            </div>
+            <div class="search-box">
+                <input type="search" placeholder="Search for People and Creators...">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="header-right">
+                <div class="profile-photo online">
+                    <img src="images/profile-pics.jpg">
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="bi bi-house-fill active"></i></a></li>
+                <li><a href="#"><i class="bi bi-chat-dots-fill"><small class="notification-count">6</small></i></a></li>
+                <li><a href="#"><i class="bi bi-bell-fill"><small class="notification-count">9+</small></i></a></li>
+                <li><a href="#"><i class="bi bi-collection-play-fill"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ========================= !Header ========================= -->
+
+    <!-- ========================= Main Container ========================= -->
+    <div class="container">
+        <!-- ========================= Left Side ========================= -->
+        <div class="left-side">
+            <div class="profile">
+                <div class="profile-photo">
+                    <img src="images/profile-pics.jpg">
+                </div>
+                <div class="username-box">
+                    <h4>Martho <i class="bi bi-patch-check-fill verified"></i></h4>
+                    <p>@gen_martho</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" id="messages-notificatiions" class="active">
+                    <i class="bi bi-chat-dots-fill"><small class="notification-count">6</small></i> <h3>Messages</h3>
+                </a>
+                <a href="#" id="notifications">
+                    <i class="bi bi-bell-fill"><small class="notification-count">9+</small></i> <h3>Notifications</h3>
+                    <!-- Notification Popup -->
+                    <div class="notifications-popup">
+                        <div>
+                            <div class="profile-photo">
+                                <img src="images/friend-1.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Ebun_dara</b> tagged you in a post
+                                <small>2 minutes ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="images/friend-2.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Smiley</b> started following you
+                                <small>2 hours ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="images/friend-1.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Ebun_dara</b> commented on your post
+                                <small>1 day ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="images/friend-3.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Martho</b> and <b>295 others</b> liked your post
+                                <small>1 day ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="images/friend-3.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Martho</b> started following you
+                                <small>2 days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#"><i class="bi bi-people-fill"></i> <h3>Communities</h3></a>
+                <a href="#"><i class="bi bi-bookmark-fill"></i> <h3>Bookmarks</h3></a>
+                <a href="#"><i class="bi bi-calendar-event-fill"></i> <h3>Events</h3></a>
+                <a href="#"><i class="bi bi-camera-reels-fill"></i> <h3>Live Videos</h3></a>
+                <a href="settings.html"><i class="bi bi-gear-wide-connected"></i> <h3>Settings</h3></a>
+            </div>
+            <label for="create-post" class="btn btn-primary create-post-btn">Create Post</label>
+        </div>
+        <!-- ========================= Left Side Ends ========================= -->
+
+        <!-- ========================= Main Content ========================= -->
+        <div class="main-content">
+            <!-- ==================== Stories section ===================== -->
+            <div class="stories">
+                <div class="story">
+                    <div class="profile-photo">
+                        <img src="images/profile-pics.jpg">
+                    </div>
+                    <p class="name">Add Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-photo">
+                        <img src="images/friend-1.jpg">
+                    </div>
+                    <p class="name">kylie_jenner</p>
+                </div>
+                <div class="story">
+                    <div class="profile-photo">
+                        <img src="images/friend-2.jpg">
+                    </div>
+                    <p class="name">Judith Macron</p>
+                </div>
+                <div class="story">
+                    <div class="profile-photo">
+                        <img src="images/friend-3.jpg">
+                    </div>
+                    <p class="name">The real guy</p>
+                </div>
+                <div class="story">
+                    <div class="profile-photo">
+                        <img src="images/friend-1.jpg">
+                    </div>
+                    <p class="name">kylie_jenner</p>
+                </div>
+            </div>
+            <!-- ==================== Create post section ===================== -->
+            <form class="create-post">
+                <div class="profile-photo">
+                    <img src="images/profile-pics.jpg">
+                </div>
+                <input type="text" id="create-post" placeholder="What's on your mind, Martho">
+                <input type="submit" class="btn btn-primary" value="Post">
+            </form>
+            <!-- ==================== Feeds section ===================== -->
+            <div class="feeds">
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="images/profile-pics.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Martho <i class="bi bi-patch-check-fill verified"></i></h3>
+                                <small>@gen_martho</small>
+                            </div>
+                        </div>
+                        <span class="edit"><i class="bi bi-three-dots"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/advertisement-1.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="bi bi-heart"></i></span>
+                            <span><i class="bi bi-chat"></i></span>
+                            <span><i class="bi bi-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="bi bi-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="images/friend-1.jpg"></span>
+                        <span><img src="images/friend-2.jpg"></span>
+                        <span><img src="images/friend-3.jpg"></span>
+                        <p>Liked by <b>greg-malor</b> and <b>295 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>kylie_jenner</b> Lorem ipsum dolor sit amet consectetur 
+                            <span class="harsh-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        view all 170 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="images/friend-2.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Judith</h3>
+                                <small>@judith_macr</small>
+                            </div>
+                        </div>
+                        <span class="edit"><i class="bi bi-three-dots"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/advertisement-1.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="bi bi-heart"></i></span>
+                            <span><i class="bi bi-chat"></i></span>
+                            <span><i class="bi bi-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="bi bi-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="images/friend-1.jpg"></span>
+                        <span><img src="images/friend-2.jpg"></span>
+                        <span><img src="images/friend-3.jpg"></span>
+                        <p>Liked by <b>greg-malor</b> and <b>295 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>kylie_jenner</b> Lorem ipsum dolor sit amet consectetur 
+                            <span class="harsh-tag">#programming</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        view all 200 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="images/friend-1.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Kylie <i class="bi bi-patch-check-fill verified"></i></h3>
+                                <small>@kylie_jenner</small>
+                            </div>
+                        </div>
+                        <span class="edit"><i class="bi bi-three-dots"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/advertisement-2.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="bi bi-heart"></i></span>
+                            <span><i class="bi bi-chat"></i></span>
+                            <span><i class="bi bi-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="bi bi-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="images/friend-1.jpg"></span>
+                        <span><img src="images/friend-2.jpg"></span>
+                        <span><img src="images/friend-3.jpg"></span>
+                        <p>Liked by <b>greg-malor</b> and <b>295 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>gen_martho</b> Lorem ipsum dolor sit amet consectetur 
+                            <span class="harsh-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        view all 170 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="images/friend-3.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Greg Malor</h3>
+                                <small>@greg-malor</small>
+                            </div>
+                        </div>
+                        <span class="edit"><i class="bi bi-three-dots"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/advertisement-1.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="bi bi-heart"></i></span>
+                            <span><i class="bi bi-chat"></i></span>
+                            <span><i class="bi bi-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="bi bi-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="images/friend-1.jpg"></span>
+                        <span><img src="images/friend-2.jpg"></span>
+                        <span><img src="images/friend-3.jpg"></span>
+                        <p>Liked by <b>greg-malor</b> and <b>295 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>kylie_jenner</b> Lorem ipsum dolor sit amet consectetur 
+                            <span class="harsh-tag">#lifestyle</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        view all 80 comments
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="images/friend-2.jpg">
+                            </div>
+                            <div class="info">
+                                <h3>Judith</h3>
+                                <small>@judith_macr</small>
+                            </div>
+                        </div>
+                        <span class="edit"><i class="bi bi-three-dots"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/advertisement-1.jpg">
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="bi bi-heart"></i></span>
+                            <span><i class="bi bi-chat"></i></span>
+                            <span><i class="bi bi-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="bi bi-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="images/friend-1.jpg"></span>
+                        <span><img src="images/friend-2.jpg"></span>
+                        <span><img src="images/friend-3.jpg"></span>
+                        <p>Liked by <b>greg-malor</b> and <b>295 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>kylie_jenner</b> Lorem ipsum dolor sit amet consectetur 
+                            <span class="harsh-tag">#programming</span>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        view all 200 comments
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========================= Main Content Ends ========================= -->
+
+        <!-- ========================= Right Side ========================= -->
+        <div class="right-side">
+
+            <!-- ========================= Events ========================= -->
+            <div class="events">
+                <div class="rs-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>3</h3>
+                        <span>June</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>GCK 2.0</h4>
+                        <p><i class="bi bi-geo-alt-fill"></i> Lagos</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>20</h3>
+                        <span>August</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>ASUU Confer.</h4>
+                        <p><i class="bi bi-geo-alt-fill"></i> Ekiti</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ========================= Ads ========================= -->
+            <div class="advertisement">
+                <div class="rs-title">
+                    <h4>Explore</h4>
+                    <a href="#">Close</a>
+                </div>
+                <div class="ads-links">
+                    <a href="#" class="btn">Person</a>
+                    <a href="#" class="btn">Communities</a>
+                    <a href="#" class="btn">Events</a>
+                </div>
+                <img src="images/advertisement-1.jpg" class="sidebar-ads">
+            </div>
+            
+            <!-- ========================= Message ========================= -->
+            <div class="messages">
+                <div class="rs-title">
+                    <h4>Messages</h4>
+                    <a href="#"><i class="bi bi-box-arrow-in-down-left"></i></a>
+                </div>
+
+                <div class="msg-search">
+                    <input type="search" placeholder="Search for Message">
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <div class="category">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="msg-req">Requests(5)</h6>
+                </div>
+
+                <div class="msg-body">
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="images/friend-1.jpg">
+                        </div>
+                        <div class="message">
+                            <h5>Dara <i class="bi bi-patch-check-fill verified"></i></h5>
+                            <!-- <small>@ebun_dara</small> -->
+                            <p class="unread-msg"><b>2 new messages</b></p>
+                        </div>
+                    </div>
+                    <div class="online-list">
+                        <div class="offline">
+                            <img src="images/friend-2.jpg">
+                        </div>
+                        <div class="message">
+                            <h5>Smiley</h5>
+                            <!-- <small>@smiley_emoji</small> -->
+                            <p class="read-msg"><b>Have you gotten the job done</b></p>
+                        </div>
+                    </div>
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="images/friend-3.jpg">
+                        </div>
+                        <div class="message">
+                            <h5>Malor</h5>
+                            <!-- <small>@greg-malor</small> -->
+                            <p class="read-msg"><b>Hey bro whatsup</b></p>
+                        </div>
+                    </div>
+                    <div class="online-list">
+                        <div class="offline">
+                            <img src="images/friend-2.jpg">
+                        </div>
+                        <div class="message">
+                            <h5>Judith</h5>
+                            <!-- <small>@smiley_emoji</small> -->
+                            <p class="unread-msg"><b>Hey!</b></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ========================= Who to follow ======================== -->
+            <div class="who-to-follow">
+                <div class="rs-title">
+                    <h4>Who to follow</h4>
+                    <a href="#">See all</a>
+                </div>
+
+                <div class="suggestion">
+                    <div class="user">
+                       <div class="profile-photo">
+                            <img src="images/friend-1.jpg">
+                        </div>
+                        <div class="info">
+                            <h3>Kale Juner</h3>
+                            <small>@kjuner</small>
+                            <p class="followers">120 followers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="btn btn-primary">Follow</button>
+                        <button class="btn">Delete</button>
+                    </div>
+                </div>
+
+                <div class="suggestion">
+                    <div class="user">
+                       <div class="profile-photo">
+                            <img src="images/friend-3.jpg">
+                        </div>
+                        <div class="info">
+                            <h3>Thomas Eddie</h3>
+                            <small>@thomas_ed</small>
+                            <p class="followers">90 followers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="btn btn-primary">Follow</button>
+                        <button class="btn">Delete</button>
+                    </div>
+                </div>
+
+                <div class="suggestion">
+                    <div class="user">
+                       <div class="profile-photo">
+                            <img src="images/friend-2.jpg">
+                        </div>
+                        <div class="info">
+                            <h3>Juliet Jackson</h3>
+                            <small>@juliet</small>
+                            <p class="followers">250 followers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="btn btn-primary">Follow</button>
+                        <button class="btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ========================= Right Side Ends ========================= -->
+        
+    </div>
+    <!-- ========================= !Main Container ========================= -->
+
+    <script src="js/index.js"></script>
+</body>
+</html>
